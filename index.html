@@ -12,7 +12,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- Шапка сайта -->
@@ -448,10 +448,84 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="form-wrapper">
-        <button type="button" data-modal-close></button>
+        <button class="wrapper-close" type="button" data-modal-close></button>
+        <p class="form-wrapper-text">
+          Оставьте свои данные, мы вам перезвоним
+        </p>
+        <form action="">
+          <div class="modal-form">
+            <label for="name">Имя</label>
+            <svg class="modal-svg">
+              <use href="./images/sprite1.svg#icon-person"></use>
+            </svg>
+            <input
+              class="modal-input"
+              type="text"
+              name="text-name"
+              placeholder="Андрей Андреевич"
+              id="name"
+              required
+            />
+          </div>
+
+          <div class="modal-form">
+            <label for="tel">Телефон</label>
+            <svg class="modal-svg">
+              <use href="./images/sprite1.svg#icon-phones"></use>
+            </svg>
+            <input
+              class="modal-input"
+              type="tel"
+              name="tel"
+              placeholder="+380639379992"
+              id="tel"
+              required
+            />
+          </div>
+
+          <div class="modal-form">
+            <label for="email">Почта</label>
+            <svg class="modal-svg">
+              <use href="./images/sprite1.svg#icon-email"></use>
+            </svg>
+            <input
+              class="modal-input"
+              type="email"
+              name="email"
+              placeholder="web-studio@gmail.com"
+              id="email"
+              required
+            />
+          </div>
+
+          <label class="text-area-label" for="texterea">Комментарий</label>
+          <textarea
+            class="text-area"
+            name="massage"
+            placeholder="Введите текст"
+            id="texterea"
+          ></textarea>
+          <div class="checkbox-wrapper">
+            <input
+              type="checkbox"
+              class="checkbox-input"
+              value="accept"
+              id="checkbox"
+              required
+            />
+            <label class="checkbox-label" for="checkbox"
+              >Соглашаюсь с рассылкой и принимаю
+              <a class="checkbox-link" href="" _target="black"
+                >Условия договора</a
+              ></label
+            >
+          </div>
+          <button type="submit" class="modal-button">
+            Отправить
+          </button>
+        </form>
       </div>
     </div>
-
     <script src="./js/modal.js"></script>
   </body>
 </html>
