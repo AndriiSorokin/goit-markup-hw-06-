@@ -472,19 +472,21 @@ nav {
     border-radius: 4px;
     height: 90px;
     width: 100%;
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client-list-link:hover {
+.client-list-link:hover,
+.client-list-link:focus {
     border-color: var(--hover-text-color);
 }
 
 .client-list-link svg {
     fill: #AFB1B8;
-    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client-list-link:hover svg {
+.client-list-link:hover svg,
+.client-list-link:focus svg {
     fill: var(--hover-text-color);
 }
 
@@ -770,13 +772,13 @@ footer .container {
 }
 
 .modal-form:hover .modal-svg,
-.modal-form:focus .modal-svg {
+.modal-form:focus-within .modal-svg {
     fill: var(--hover-text-color);
     transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form:hover .modal-input,
-.modal-form:hover .modal-input {
+.modal-form:focus-within .modal-input {
     border-color: var(--hover-text-color);
     transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
