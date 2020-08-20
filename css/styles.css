@@ -769,23 +769,16 @@ footer .container {
     font-size: 12px;
 }
 
-.modal-input {
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    width: 100%;
-    height: 40px;
-    padding-left: 32px;
-    margin-top: 4px;
-}
-
 .modal-form:hover .modal-svg,
 .modal-form:focus .modal-svg {
     fill: var(--hover-text-color);
     transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-text {
-    color: var(--white-color);
+.modal-form:hover .modal-input,
+.modal-form:hover .modal-input {
+    border-color: var(--hover-text-color);
+    transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-svg {
@@ -795,6 +788,19 @@ footer .container {
     width: 18px;
     height: 18px;
     margin-left: 12px;
+}
+
+.modal-input {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    width: 100%;
+    height: 40px;
+    padding-left: 32px;
+    margin-top: 4px;
+}
+
+.modal-text {
+    color: var(--white-color);
 }
 
 .modal-button {
